@@ -1,11 +1,12 @@
 import Link from "next/link";
+import Logo from "../logo";
 
 export default function Header() {
   return (
     <header className="bg-black py-5">
       <div className="container mx-auto flex justify-between items-center">
         <Link href='/' className="text-red-600 font-bold text-3xl ">
-          IPTV Pro
+          <Logo />
         </Link>
 
         <nav>
