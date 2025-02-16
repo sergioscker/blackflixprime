@@ -2,20 +2,24 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header>
-      <div>
-        <Link href='/'>
+    <header className="bg-black py-5">
+      <div className="container mx-auto flex justify-between items-center">
+        <Link href='/' className="text-red-600 font-bold text-3xl ">
           IPTV Pro
         </Link>
 
         <nav>
-          <ul>
+          <ul className="flex space-x-4">
             <li>
-              features
+              <Link href="#features" className="text-white hover:text-red-600">
+                Features
+              </Link>
             </li>
 
             <li>
-              payments
+              <Link href="#features" className="text-white hover:text-red-600">
+                Pagamento
+              </Link>
             </li>
           </ul>
         </nav>

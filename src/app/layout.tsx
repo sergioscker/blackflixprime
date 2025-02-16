@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
-import Header from "@/components/header/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
     title: `IPTV SMART PRO`,
     description:
       'Descubra alta qualidade de canais do mundo inteiro.',
-    url: '',
+    url: 'https://iptvpro-ten.vercel.app',
     type: 'website',
     images: [
       {
@@ -55,7 +54,6 @@ export default function RootLayout({
     <html lang="pt-BR" className="min-h-screen flex flex-col">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header />
         {children}
       </body>
     </html>
