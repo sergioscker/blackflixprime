@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="bg-black py-20 px-4 md:px-8 bg-center bg-cover"
       style={{ backgroundImage: "url('/background.svg')" }}
     >
-      <div className="flex xl:justify-around items-center gap-4 w-full">
+      <div className="flex flex-col md:flex-row xl:justify-around items-center gap-4 w-full">
         {/* texts */}
         <div className="flex flex-col p-4 max-w-xl text-center xl:text-left">
           <h1 className="flex xl:text-left text-center text-3xl sm:text-4xl
@@ -51,7 +51,6 @@ export default function Hero() {
             height={600}
             className="rounded-md w-full h-auto max-w-sm sm:max-w-md md:max-w-lg xl:max-w-lg" />
         </div>
-
       </div>
     </section>
   )
