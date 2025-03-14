@@ -6,14 +6,12 @@ import Price from "@/components/price/page";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div>
       <Header />
-      <main>
-        <Hero />
-        <Features />
-        <Price />
-        <Footer />
-      </main>
+      <Hero />
+      <Features />
+      <Price />
+      <Footer />
     </div>
   );
 }

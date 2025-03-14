@@ -1,36 +1,37 @@
-
+// icons
 import { Check } from "lucide-react"
+
+// components
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
 const plans = [
   {
-    name: "Basic",
-    price: "R$9.99",
-    features: ["500+ Channels", "HD Quality", "1 Device", "7-Day Replay"],
-  },
-  {
-    name: "Standard",
-    price: "R$19.99",
-    features: ["1000+ Channels", "Full HD Quality", "3 Devices", "14-Day Replay", "On-Demand Library"],
-  },
-  {
-    name: "Premium",
+    name: "Basic / Mês",
     price: "R$29.99",
-    features: ["2000+ Channels", "4K Quality", "5 Devices", "30-Day Replay", "On-Demand Library", "Premium Sports"],
+    features: ["500+ Canais", " Qualidade Full HD ", "3+ Dispositivos"],
+  },
+  {
+    name: "Standard / Trimestral",
+    price: "R$79.99",
+    features: ["500+ Canais", " Qualidade Full HD ", "3+ Dispositivos"],
+  },
+  {
+    name: "Premium / Semestral",
+    price: "R$149.99",
+    features: ["500+ Canais", " Qualidade Full HD ", "3+ Dispositivos"],
   },
 ]
 
 export default function Price() {
   return (
-    <section id="pricing" className="py-20 bg-black">
+    <section id="price" className="py-20 mt-10 px-4 md:px-8 bg-black">
       <div className="container mx-auto">
-
         <h2 className="text-3xl font-bold text-center mb-12 text-white">Escolha seu plano:</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <Card key={index} className="flex flex-col bg-gray-900 border-red-600">
+            <Card key={index} className="flex flex-col bg-gray-900 border-red-600 ">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-center text-red-600">{plan.name}</CardTitle>
               </CardHeader>
@@ -41,9 +42,10 @@ export default function Price() {
                   <strong className="text-sm font-normal text-gray-400">/mês</strong>
                 </p>
 
+
                 <ul className="space-y-2">
                   {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-gray-300">
+                    <li key={featureIndex} className="flex items-center text-gray-300 md:text-center">
                       <Check className="h-5 w-5 text-red-600 mr-2" />
                       <span>{feature}</span>
                     </li>
@@ -59,6 +61,6 @@ export default function Price() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 

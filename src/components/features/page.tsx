@@ -3,33 +3,35 @@ import { Tv, Globe, Clock, AppleIcon as DevicesIcon } from "lucide-react"
 const features = [
   {
     icon: <Tv className="h-12 w-12 text-red-600" />,
-    title: "Thousands of Channels",
-    description: "Access a vast library of international channels covering news, sports, entertainment, and more.",
+    title: "Milhares de canais",
+    description: "Acesse uma vasta biblioteca de canais internacionais cobrindo notícias, esportes, entretenimento e muito mais.",
   },
   {
     icon: <Globe className="h-12 w-12 text-red-600" />,
-    title: "Global Content",
-    description: "Enjoy content from around the world, with multi-language support and diverse programming.",
+    title: "Conteúdo Global",
+    description: "Aproveite conteúdo do mundo inteiro, com programação diversificada.",
   },
   {
     icon: <Clock className="h-12 w-12 text-red-600" />,
-    title: "On-Demand Streaming",
-    description: "Watch your favorite shows and movies anytime with our extensive on-demand library.",
+    title: "Streaming",
+    description: "Veja seus programas e filmes a qualquer momento.",
   },
   {
     icon: <DevicesIcon className="h-12 w-12 text-red-600" />,
-    title: "Multi-Device Support",
-    description: "Stream on your TV, computer, tablet, or smartphone - anywhere, anytime.",
+    title: "Suporta Diversos Dispositivos",
+    description: "Transmita na sua TV, computador, tablet ou smartphone, em qualquer lugar, a qualquer hora.",
   },
 ]
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 bg-black">
+    <section id="features" className="pt-20 mt-10 px-4 md:px-8 bg-black">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-white">Por que escolher nossos serviços?</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">
+          Por que escolher nossos serviços?
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="text-center bg-black p-6 rounded-lg border border-red-600">
               <div className="mb-4 inline-block">{feature.icon}</div>
@@ -40,6 +42,6 @@ export default function Features() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 

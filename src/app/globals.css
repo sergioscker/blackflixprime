@@ -76,16 +76,10 @@
   * {
     @apply border-border;
   }
+  
   body {
     @apply bg-black text-white;
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+
