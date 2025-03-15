@@ -24,12 +24,12 @@ export default function Hero() {
           {/* sociais buttons */}
           <div className="flex flex-col gap-4 xl:items-start items-center">
             <Link href='https://bit.ly/Blackflixbr'
-              className="bg-red-600 text-white p-3 rounded-md hover:text-red-700">
+              className="bg-red-600 text-white p-3 rounded-md hover:bg-red-500">
               Comece seu teste gratuito
             </Link>
 
             <div className="flex gap-3">
-              <Link href='https://bit.ly/Blackflixbr' className="text-red-600 hover:text-red-700 
+              <Link href='https://bit.ly/Blackflixbr' className="text-red-600 hover:text-red-700/80 
               border border-red-600 rounded-md p-2">
                 <FaWhatsapp className="w-10 h-10" />
               </Link>
@@ -47,9 +47,9 @@ export default function Hero() {
             src="/blackflix.webp"
             alt="IPTV streaming devices"
             quality={100}
-            width={400}
-            height={600}
-            className="rounded-md w-full h-auto max-w-sm sm:max-w-md md:max-w-lg xl:max-w-lg" />
+            width={500}
+            height={500}
+            className="rounded-md w-full h-auto max-w-sm" />
         </div>
       </div>
     </section>
