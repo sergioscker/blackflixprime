@@ -3,9 +3,9 @@ import Logo from "../logo";
 
 export default function Header() {
   return (
-    <header className="py-10">
-      <div className="container mx-auto flex justify-center xl:justify-between items-center">
-        <Link href='/' className="text-red-600 font-bold text-3xl p-3">
+    <header className="container w-full py-5">
+      <div className="mx-auto flex justify-center xl:justify-between items-center">
+        <Link href='/' className="text-red-600 font-bold text-3xl">
           <Logo />
         </Link>
 
@@ -27,8 +27,5 @@ export default function Header() {
       </div>
 
     </header>
-
-
-
   )
 }

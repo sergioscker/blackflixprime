@@ -31,10 +31,10 @@ export default function Features() {
           Por que escolher nossos serviços?
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {features.map((feature, index) => (
             <div key={index} className="text-center bg-black p-6 rounded-lg border border-red-600">
-              <div className="mb-4 inline-block">{feature.icon}</div>
+              <div className="mb-3 flex items-center justify-center">{feature.icon}</div>
               <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
               <p className="text-gray-400">{feature.description}</p>
             </div>

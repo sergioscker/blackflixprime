@@ -4,14 +4,20 @@ import Image from "next/image";
 //icons
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa6'
 
+// components
+import Header from "../header/page";
+
 export default function Hero() {
   return (
-    <section className="bg-black py-20 px-4 md:px-8 bg-center bg-cover"
+    <section className="bg-black py-12 bg-center bg-cover bg-no-repeat"
       style={{ backgroundImage: "url('/background.svg')" }}
     >
-      <div className="flex flex-col md:flex-row xl:justify-around items-center gap-4 w-full">
+      {/* header */}
+      <Header />
+
+      <div className="container flex flex-col md:flex-row xl:justify-between items-center gap-5 w-full py-20">
         {/* texts */}
-        <div className="flex flex-col p-4 max-w-xl text-center xl:text-left">
+        <div className="flex flex-col max-w-xl text-center xl:text-left">
           <h1 className="flex xl:text-left text-center text-3xl sm:text-4xl
            md:text-6xl font-bold mb-4 text-white leading-tight">
             Experimente TV como nunca antes!
@@ -42,15 +48,15 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex justify-center xl:w-1/4 w-full">
-          <Image
-            src="/blackflix.webp"
-            alt="IPTV streaming devices"
-            quality={100}
-            width={500}
-            height={500}
-            className="rounded-md w-full h-auto max-w-sm" />
-        </div>
+
+        <Image
+          src="/blackflixprime.webp"
+          alt="IPTV streamers"
+          quality={100}
+          width={500}
+          height={500}
+          className="rounded-md w-full max-w-md" />
+
       </div>
     </section>
   )
