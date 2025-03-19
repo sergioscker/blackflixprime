@@ -9,13 +9,12 @@ export default function Footer() {
     <footer className="bg-gray-900 mx-auto py-10 px-6 md:px-12 mt-10">
       <div className="container mx-auto">
         <div className="flex flex-col sm:flex-row flex-wrap justify-between gap-6 sm:gap-8 text-center sm:text-left">
-
           {/* Logo and social midia */}
           <div className="flex flex-col items-center sm:items-start gap-4">
             <Logo />
 
             <div className="flex gap-4">
-              <Link href="https://www.instagram.com/blackflix_oficial?igsh=dDQ5eXFtODVsa3ds">
+              <Link href="https://www.instagram.com/blackflix_prime?igsh=dDQ5eXFtODVsa3ds">
                 <FaInstagram className="h-8 w-8 hover:text-red-600 transition duration-300" />
               </Link>
 
@@ -28,7 +27,7 @@ export default function Footer() {
 
           {/* navigation links */}
           <div className="flex flex-col items-center sm:items-start">
-            <h3 className="text-lg font-semibold mb-4 text-red-600">Navegação</h3>
+            <h3 className="text-lg font-semibold mb-4 text-red-600"> Navegação</h3>
 
             <ul className="space-y-2">
               <li>
@@ -43,7 +42,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#features" className="flex gap-2 items-center hover:text-red-600 transition">
-                  <FaWifi className="w-5 h-5" /> Features
+                  <FaWifi className="w-5 h-5" /> Benefícios
                 </Link>
               </li>
             </ul>
@@ -51,7 +50,7 @@ export default function Footer() {
 
           {/* social midia */}
           <div className="flex flex-col items-center sm:items-start">
-            <h3 className="text-lg font-semibold mb-4 text-red-600">Conecte-se</h3>
+            <h3 className="text-lg font-semibold mb-4 text-red-600"> Conecte-se</h3>
 
             <ul className="space-y-2">
               <li>
@@ -61,7 +60,7 @@ export default function Footer() {
               </li>
 
               <li>
-                <Link href="https://www.instagram.com/blackflix_oficial?igsh=dDQ5eXFtODVsa3ds" className="flex items-center gap-2 hover:text-red-600 transition">
+                <Link href="https://www.instagram.com/blackflix_prime?igsh=dDQ5eXFtODVsa3ds" className="flex items-center gap-2 hover:text-red-600 transition">
                   <FaInstagram className="w-5 h-5" /> Instagram
                 </Link>
               </li>

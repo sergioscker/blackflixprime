@@ -34,7 +34,7 @@ export default function Hero() {
                 <FaWhatsapp className="w-10 h-10" />
               </Link>
 
-              <Link href='https://www.instagram.com/blackflix_oficial?igsh=dDQ5eXFtODVsa3ds' className="text-red-600 hover:text-red-700 
+              <Link href='https://www.instagram.com/blackflix_prime?igsh=dDQ5eXFtODVsa3ds' className="text-red-600 hover:text-red-700 
               border border-red-600 rounded-md p-2">
                 <FaInstagram className="w-10 h-10" />
               </Link>
