@@ -16,16 +16,16 @@ const geistMono = Geist_Mono({
 
 // SEO
 export const metadata: Metadata = {
-  title: 'IPTV PRO',
+  title: 'BlackFlix Prime',
   description:
     'Verique os planos para um mundo digital completo.',
   keywords:
     'IPTV, assinatura, planos, canais',
   openGraph: {
-    title: `IPTV SMART PRO`,
+    title: `BlackFlix Prime`,
     description:
       'Descubra alta qualidade de canais do mundo inteiro.',
-    url: 'https://iptvpro-ten.vercel.app',
+    url: 'https://www.blackflixprime.com',
     type: 'website',
     images: [
       {

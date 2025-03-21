@@ -19,7 +19,7 @@ export default function Header() {
 
             <li>
               <Link href="#price" className="text-white hover:text-red-600">
-                Planos de Pagamento
+                Planos
               </Link>
             </li>
           </ul>

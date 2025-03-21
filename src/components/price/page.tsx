@@ -72,7 +72,7 @@ export default function Price() {
 
               <CardFooter>
                 <Link href="https://bit.ly/Blackflixbr">
-                  <Button className="w-full bg-red-600 text-white hover:bg-red-700">
+                  <Button className="bg-red-600 text-white hover:bg-red-700">
                     Escolha o plano
                   </Button>
                 </Link>
