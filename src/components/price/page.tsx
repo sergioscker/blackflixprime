@@ -4,22 +4,37 @@ import { Check } from "lucide-react"
 // components
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import Link from "next/link";
 
 const plans = [
   {
     name: "Basic / Mês",
-    price: "R$29.99",
-    features: ["500+ Canais", " Qualidade Full HD ", "3+ Dispositivos"],
+    price: "R$30.00",
+    features: [
+      "01 assinatura",
+      "Qualidades Full HD, 4k, HD",
+      "+ 10 mil canais ao vivo, filmes e séries"
+    ],
   },
   {
     name: "Standard / Trimestral",
-    price: "R$79.99",
-    features: ["500+ Canais", " Qualidade Full HD ", "3+ Dispositivos"],
+    price: "R$80.00",
+    features: [
+      "01 assinatura",
+      "Qualidades Full HD, 4k, HD",
+      "50% de desconto no Reprodutor de Mídia Pro",
+      "Economia e custo-benefício ideal"
+    ],
   },
   {
     name: "Premium / Semestral",
-    price: "R$149.99",
-    features: ["500+ Canais", " Qualidade Full HD ", "3+ Dispositivos"],
+    price: "R$180.00",
+    features: [
+      "02 assinaturas simultâneas",
+      "Qualidades Full HD, 4k, HD",
+      "Reprodutor de Mídia Pro grátis",
+      "Melhor custo-benefício e menos renovações"
+    ],
   },
 ]
 
@@ -27,7 +42,9 @@ export default function Price() {
   return (
     <section id="price" className="py-20 mt-10 px-4 md:px-8 bg-black">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-white">Escolha seu plano:</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">
+          Escolha seu plano:
+        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
@@ -54,7 +71,11 @@ export default function Price() {
               </CardContent>
 
               <CardFooter>
-                <Button className="w-full bg-red-600 text-white hover:bg-red-700">Escolha o plano</Button>
+                <Link href="https://bit.ly/Blackflixbr">
+                  <Button className="w-full bg-red-600 text-white hover:bg-red-700">
+                    Escolha o plano
+                  </Button>
+                </Link>
               </CardFooter>
             </Card>
           ))}

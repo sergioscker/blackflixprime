@@ -35,8 +35,15 @@ export default function Features() {
           {features.map((feature, index) => (
             <div key={index} className="text-center bg-black p-6 rounded-lg border border-red-600">
               <div className="mb-3 flex items-center justify-center">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
-              <p className="text-gray-400">{feature.description}</p>
+              {/* title */}
+              <h3 className="text-xl font-semibold mb-2 text-white">
+                {feature.title}
+              </h3>
+
+              {/* description */}
+              <p className="text-gray-400">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

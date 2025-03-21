@@ -13,13 +13,13 @@ export default function Header() {
           <ul className="flex space-x-4 p-3">
             <li>
               <Link href="#features" className="text-white hover:text-red-600">
-                Features
+                Benefícios
               </Link>
             </li>
 
             <li>
               <Link href="#price" className="text-white hover:text-red-600">
-                Pagamento
+                Planos de Pagamento
               </Link>
             </li>
           </ul>

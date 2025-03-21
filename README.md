@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Blackflix Prime
 
-## Getting Started
+Blackflix Prime is a modern landing page built with Next.js, React, and Tailwind CSS. It provides a sleek and responsive UI, leveraging the latest technologies to ensure high performance and maintainability.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Built with **Next.js 15** for server-side rendering and static site generation.
+- Styled using **Tailwind CSS** for rapid UI development.
+- Uses **React 19** for modern component-based architecture.
+- Includes **Lucide Icons** and **React Icons** for a rich icon set.
+- Optimized with **ESLint** and **TypeScript** for better code quality.
+
+## 📦 Installation
+
+To install dependencies, run:
+
+```sh
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 Development
 
-## Learn More
+To start the development server, run:
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+or
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```sh
+yarn dev
+```
 
-## Deploy on Vercel
+The application will be available at `http://localhost:3000/`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏗️ Build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To build the project for production, use:
+
+```sh
+npm run build
+```
+
+After building, start the production server with:
+
+```sh
+npm run start
+```
+
+## 🛠️ Linting
+
+Ensure code quality by running:
+
+```sh
+npm run lint
+```
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
