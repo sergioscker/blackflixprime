@@ -15,7 +15,7 @@ export default function Hero() {
       {/* header */}
       <Header />
 
-      <div className="container flex flex-col md:flex-row xl:justify-between items-center py-20">
+      <div className="container flex flex-col md:flex-row xl:justify-between gap-5 items-center py-20">
         {/* texts */}
         <div className="flex flex-col max-w-xl text-center xl:text-left">
           <h1 className="flex xl:text-left text-center text-3xl sm:text-4xl
@@ -55,7 +55,7 @@ export default function Hero() {
           quality={100}
           width={500}
           height={500}
-          className="rounded-md w-full max-w-md mr-5" />
+          className="rounded-md w-full max-w-md xl:mr-8 mt-10" />
 
       </div>
     </section>

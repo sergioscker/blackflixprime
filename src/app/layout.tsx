@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '',
+        url: 'https://www.blackflixprime.com/_next/image?url=%2Fblackflixprime.webp&w=640&q=100',
         alt: 'logo',
       },
     ],

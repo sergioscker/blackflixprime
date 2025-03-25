@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Infos */}
           <div className="flex flex-col items-center sm:items-center max-w-[300px]">
-            <h3 className="text-lg font-semibold mb-4 text-red-600">IPTV Pro</h3>
+            <h3 className="text-lg font-semibold mb-4 text-red-600">BlackFlix Prime</h3>
 
             <p className="text-gray-400 text-center xl:text-left">
               Experimente o futuro da televisão com nosso serviço de IPTV de ponta.
@@ -80,7 +80,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; 2025 IPTV Pro. Todos os direitos reservados.</p>
+          <p>&copy; 2025 BlackFlix Prime. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
